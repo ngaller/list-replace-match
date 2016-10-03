@@ -22,5 +22,3 @@ import replaceMatch from 'list-replace-match'
     //     { id: '123', val: 'new value' },
     //     { id: '1', val: '...' }
     // ];
-
-```
