@@ -1,7 +1,6 @@
 {
   "author": "Nicolas Galler <nic@f1code.com>",
   "dependencies": {
-    "moment": "2.14.1"
   },
   "description": "Replace or append a matching value in an array",
   "devDependencies": {
