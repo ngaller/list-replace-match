@@ -1,0 +1,39 @@
+{
+  "author": "Nicolas Galler <nic@f1code.com>",
+  "dependencies": {
+    "moment": "2.14.1"
+  },
+  "description": "Replace or append a matching value in an array",
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.4.5",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-preset-stage-1": "^6.1.2",
+    "eslint": "^3.2.2",
+    "mocha": "^3.0.1"
+  },
+  "engines": {
+    "node": "4.2.3"
+  },
+  "homepage": "https://nicocrm.com",
+  "keywords": [
+    "utility",
+    "array"
+  ],
+  "license": "MIT",
+  "main": "lib/list-replace-match.js",
+  "name": "list-replace-match",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicocrm/list-replace-match"
+  },
+  "scripts": {
+    "build": ". scripts/build.sh",
+    "lint": "node_modules/.bin/eslint --ext .js .",
+    "test": "babel-node node_modules/mocha/bin/_mocha test/**/*.js --recursive",
+    "prepublish": "npm run build"
+  },
+  "version": "1.0.0"
+}
