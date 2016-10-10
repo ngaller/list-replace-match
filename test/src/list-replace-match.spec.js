@@ -16,24 +16,28 @@ describe('replaceMatch', () => {
       id: 1, v: 'XXX'
     });
     assert(modified[0].v == 'XXX');
+    assert(modified.length == 6);
   });
   it('should replace element at tail of list', () => {
     const modified = replaceMatch(list, x => x.id == 6, {
       id: 6, v: 'XXX'
     });
     assert(modified[5].v == 'XXX');
+    assert(modified.length == 6);
   });
   it('should replace element at middle of list', () => {
     const modified = replaceMatch(list, x => x.id == 4, {
       id: 4, v: 'XXX'
     });
     assert(modified[3].v == 'XXX');
+    assert(modified.length == 6);
   });
   it('should append element when no match', () => {
     const modified = replaceMatch(list, x => x.id == 7, {
       id: 7, v: 'XXX'
     });
     assert(modified[6].v == 'XXX');
+    assert(modified.length == 7);
   });
   it('should not modify original list', () => {
     const modified = replaceMatch(list, x => x.id == 7, {

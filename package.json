@@ -34,5 +34,5 @@
     "test": "babel-node node_modules/mocha/bin/_mocha test/**/*.js --recursive",
     "prepublish": "npm run build"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
